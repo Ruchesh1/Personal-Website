@@ -33,3 +33,8 @@ figure {
   background-size: cover;
   background-position: center center;
 }
+
+#programming_skills{
+  display:inline-block;
+  vertical-align: middle;
+}
