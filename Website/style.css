@@ -38,3 +38,23 @@ figure {
   display:inline-block;
   vertical-align: middle;
 }
+
+#soft_skills{
+  list-style-type:disc;
+}
+
+#html_logo{
+  font-size:48px;
+}
+
+#css_logo{
+  font-size:48px;
+}
+
+#java_logo{
+  font-size:48px;
+}
+
+#aboutMe{
+  font-family: "Times New Roman";
+}

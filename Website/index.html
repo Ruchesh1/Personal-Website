@@ -13,10 +13,9 @@
 </head>
 <!--Navigation row-->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-md navbar navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="#">Home</a>
 <div class="container-fluid">
-  <a class="navbar-brand" href="#"><img src="logo.png"></a>
-  <p class="navbar-brandname">Ruchesh</p>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -50,13 +49,12 @@
       <div class="col-12">
         <h1 class="display-4">About Me</h1>
       </div>
-      <div class="col-12">
-        <p class="lead">
-          Welcome to my website, my name is Ruchesh and I am glad that you stumbled upon my site. Just to give a brief introduction,
-          I am a student enrolled in York University computer science program and pursuing my dream of becoming a web developer.
-          I love technology, as it is an ever-growing revolution of making people's life easier when jumping into the technological world.
-          I hope this site will help you learn more about my past and my interest in becoming a full-stack web developer.
+      <div class="row">
+        <p class="col-md-4"></p>
+        <p class="col-md-4" id="aboutMe">
+          Welcome to my website my name is Ruchesh. A brief introduction about me, I graduated from York University Lassonde School of Engineering majoring in computer science acquiring my BSc degree. Currently, I'm pursuing my dream of starting a career in a software developer role. My passion in the space of technology and software development is ever-growing. I hope this site will give a great insight into me and my past, showing some of my interests and hobbies alongside showcasing some of the skills that I have gained over the years.
         </p>
+        <p class="col-md-4"></p>
       </div>
 </div>
 </div>
@@ -74,7 +72,7 @@
 <div class="container-fluid padding">
   <div class="row padding">
     <div class="col-lg-6">
-        <h2>Starbucks<h4>(September 2019 - Now)</h4></h2>
+        <h2>Starbucks<h4>(September 2019 - September 2021)</h4></h2>
         <p>Pursue customer connections when engaging with customers.</p>
         <p>Create a clean and friendly environment with co-workers and customers.</p>
         <p>Ability to multi-task within a fast pace environment to satisfy the needs of customers, whilst communicating with co-workers.</p>
@@ -175,8 +173,8 @@
     </tbody>
   </table>
   <p>
-    The secondary school that I went to was Maple High School. When I graduated from Maple High School,
-    I received Ontario Scholar as well as Grade 12 Law award as my achievements during my time in high school. Currently, I am enrolled in York University computer science program,
+    The high school that I went to was Maple High School. When I graduated from Maple High School,
+    I received Ontario Scholar as well as Grade 12 Law award as my achievements during my time. Currently, I am enrolled in York University computer science program,
     which is part of the Lassonde School of Engineering. I began my journey at York University on September 7, 2016,
     as my interest in programming was growing substantially, acknowledging that the field of computer science is expandable. Prior to enrolling into university I had very little knowledge
     about computer science in a logical an programming stand point. But as the years how gone past I grew more an more confident that my skills were growing beginning to grow a passion about computer
@@ -186,7 +184,7 @@
 
 <div class="container padding">
   <h3> A couple skills I have learnt when studying are: </h3>
-  <ul style="list-style-type:disc;">
+  <ul id = "soft_skills">
   <li><b>Problem Solving e.g. Labs</b></li>
   <li><b>Team Worker e.g. Lab Projects</b></li>
   <li><b>Verbal/Written Communication</b></li>
@@ -211,15 +209,15 @@
 <div class="container-fluid padding">
   <div class="row text-center padding">
     <div class="col-xs-12 col-sm-6 col-md-4">
-      <i class='fab fa-html5' style='font-size:48px;'></i>
+      <i class='fab fa-html5' id = "html_logo"></i>
       <h3>HTML5</h3>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
-      <i class='fab fa-css3' style='font-size:48px;'></i>
+      <i class='fab fa-css3' id = "css_logo"></i>
       <h3>CSS3</h3>
     </div>
     <div class="col-xs-12 col-md-4">
-      <i class='fab fa-java' style='font-size:48px;'></i>
+      <i class='fab fa-java' id = "java_logo"></i>
       <h3>Java</h3>
     </div>
   </div>
@@ -227,8 +225,7 @@
     <div class="col-md-12 text-center">
       <ul class="text-left" id = "programming_skills">
         <li><b>Java</b></li>
-        <li><b>Java Script</b></li>
-        <li><b>HTML</b></li>
+
         <li><b>C</b></li>
         <li><b>SQL</b></li>
         <li><b>Prolog</b></li>
@@ -248,7 +245,7 @@
   <div class = "text-center">
   <a href="https://github.com/Ruchesh1" class="btn btn-info" role="button">Github</a>
   </div>
-  <div class = "text-center row-padding">
+  <div class = "text-center container">
     <p>Welcome to my github, it consist of projects that I have created, showcasing some of the skills and knowledge that
       I have been thought or thought myself. It may seem small at the moment but my hope is to grow my repository so I can 
       contribute my work for the open-source community. My plan is also to help those open-source projects that are unfinished,
