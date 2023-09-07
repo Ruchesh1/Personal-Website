@@ -1,9 +1,10 @@
-.container img{
+.container img {
   width: 100%;
   height: 100%;
 }
 
-html, body{
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -12,8 +13,9 @@ figure {
   position: relative;
   width: 100%;
   height: 60%;
-  margin: 0!important;
+  margin: 0 !important;
 }
+
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -22,8 +24,9 @@ figure {
   width: 100%;
   height: 100%;
 }
+
 #fixed {
-  background-image: url('landing.jpg');
+  background-image: url('img/landing.jpg');
   position: fixed;
   display: block;
   top: 0;
@@ -34,27 +37,27 @@ figure {
   background-position: center center;
 }
 
-#programming_skills{
-  display:inline-block;
+#programming_skills {
+  display: inline-block;
   vertical-align: middle;
 }
 
-#soft_skills{
-  list-style-type:disc;
+#soft_skills {
+  list-style-type: disc;
 }
 
-#html_logo{
-  font-size:48px;
+#html_logo {
+  font-size: 48px;
 }
 
-#css_logo{
-  font-size:48px;
+#css_logo {
+  font-size: 48px;
 }
 
-#java_logo{
-  font-size:48px;
+#java_logo {
+  font-size: 48px;
 }
 
-#aboutMe{
+#aboutMe {
   font-family: "Times New Roman";
 }

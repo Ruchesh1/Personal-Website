@@ -1,257 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Ruchesh's Website</title>
+  <title>Ruchesh's Website</title>
+
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <link href="style.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <!--Navigation row-->
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<nav class="navbar navbar-expand-md navbar navbar-dark bg-dark sticky-top">
-  <a class="navbar-brand" href="#">Home</a>
-<div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#About">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Work">Work Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-      </ul>
-    </div>
-</div>
+<nav class="navbar navbar-expand-lg bg-dark-subtle fixed-top text-white">
+  <div class="container-fluid">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#About">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Work">Work Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+    </ul>
+  </div>
+  <div class="form-check form-switch ms-auto mt-3 me-3">
+    <label class="form-check-label ms-3" for="lightSwitch">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-brightness-high"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+      </svg>
+    </label>
+    <input class="form-check-input" type="checkbox" id="lightSwitch" />
+  </div>
 </nav>
 
-<!--Home image block-->
-<div class="container" id="About">
-  <img src="home.jpg" class="image-fluid" alt="Responsive image">
-</div>
+<body>
+  <!--Home image block-->
+  <div class="container" id="About">
+    <img src="img/home.jpg" class="image-fluid" alt="Responsive image">
+  </div>
 
-<!--About Me block-->
-<div class="container-fluid padding">
-<div class="row AboutMe text-center">
+  <!--About Me block-->
+  <div class="container-fluid padding">
+    <div class="row AboutMe text-center">
       <div class="col-12">
         <h1 class="display-4">About Me</h1>
       </div>
       <div class="row">
         <p class="col-md-4"></p>
         <p class="col-md-4" id="aboutMe">
-          Welcome to my website my name is Ruchesh. A brief introduction about me, I graduated from York University Lassonde School of Engineering majoring in computer science acquiring my BSc degree. Currently, I'm pursuing my dream of starting a career in a software developer role. My passion in the space of technology and software development is ever-growing. I hope this site will give a great insight into me and my past, showing some of my interests and hobbies alongside showcasing some of the skills that I have gained over the years.
+          Welcome to my website my name is Ruchesh. A brief introduction about me, I graduated from York University
+          Lassonde School of Engineering majoring in computer science acquiring my BSc degree. Currently, I'm pursuing
+          my dream of starting a career in a software developer role. My passion in the space of technology and
+          software
+          development is ever-growing. I hope this site will give a great insight into me and my past, showing some of
+          my interests and hobbies alongside showcasing some of the skills that I have gained over the years.
         </p>
         <p class="col-md-4"></p>
       </div>
-</div>
-</div>
-
-<div>
-  <hr class="my-4">
-</div>
-
-<!--Work Experience block-->
-
-<!--center Work Experience header block, also add padding-->
-
-<h1 class="display-4 text-center" id="Work">Work Experience</h1>
-
-<div class="container-fluid padding">
-  <div class="row padding">
-    <div class="col-lg-6">
-        <h2>Starbucks<h4>(September 2019 - September 2021)</h4></h2>
-        <p>Pursue customer connections when engaging with customers.</p>
-        <p>Create a clean and friendly environment with co-workers and customers.</p>
-        <p>Ability to multi-task within a fast pace environment to satisfy the needs of customers, whilst communicating with co-workers.</p>
-        <p>Provide accurate orders that meet the standards for the customer.</p>
-      </div>
-      <div class="col-lg-6">
-        <!--Image should be moved to the right, add padding and overlay-->
-        <img src="starbucks.jpg" class="float-right">
-      </div>
+    </div>
   </div>
-  </div>
-  
+
   <div>
     <hr class="my-4">
   </div>
 
-<div class="container-fluid padding">
-<div class="row padding">
-  <div class="col-lg-6">
-      <h2>Home Depot<h4>(May 2018 - September 2019)</h4></h2>
-      <p>Providing assistance to customers according to their assessed needs.</p>
-      <p>Providing information on the features of the product and methods to install them in the garden.</p>
-      <p>Describing and teaching customers about fertilizers, seeds and different grills.</p>
-      <p>Informing customers about the different types of insecticides and their percentage to use.</p>
-      <p>Ensuring cleanliness of the assigned areas and answer queries and solving customer issues.</p>
-    </div>
-    <div class="col-lg-6">
-      <!--Image should be moved to the right, add padding and overlay-->
-      <img src="homedepot.jpg" class="float-right">
-    </div>
-</div>
-</div>
+  <!--Work Experience block-->
 
-<div>
+  <!--center Work Experience header block, also add padding-->
+
+  <h1 class="display-4 text-center" id="Work">Work Experience</h1>
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-lg-6">
+        <h2>Starbucks<h4>(September 2019 - September 2021)</h4>
+        </h2>
+        <p>Pursue customer connections when engaging with customers.</p>
+        <p>Create a clean and friendly environment with co-workers and customers.</p>
+        <p>Ability to multi-task within a fast pace environment to satisfy the needs of customers, whilst
+          communicating
+          with co-workers.</p>
+        <p>Provide accurate orders that meet the standards for the customer.</p>
+      </div>
+      <div class="col-lg-6">
+        <!--Image should be moved to the right, add padding and overlay-->
+        <img src="img/starbucks.jpg" class="rounded float-end">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <hr class="my-4">
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-lg-6">
+        <h2>Home Depot<h4>(May 2018 - September 2019)</h4>
+        </h2>
+        <p>Providing assistance to customers according to their assessed needs.</p>
+        <p>Providing information on the features of the product and methods to install them in the garden.</p>
+        <p>Describing and teaching customers about fertilizers, seeds and different grills.</p>
+        <p>Informing customers about the different types of insecticides and their percentage to use.</p>
+        <p>Ensuring cleanliness of the assigned areas and answer queries and solving customer issues.</p>
+      </div>
+      <div class="col-lg-6">
+        <!--Image should be moved to the right, add padding and overlay-->
+        <img src="img/homedepot.jpg" class="rounded float-end">
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <hr class="my-4">
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-lg-6">
+        <h2>Wal-Mart <h4>(May 2017 - Sept 2017)</h4>
+        </h2>
+        <p>Managed a wide variety of customer service to resolve customer issues quickly and efficiently.</p>
+        <p>Recipient of multiple positive reviews acknowledging dedication to excellent customer service.</p>
+        <p>Recommended merchandise to customers based on their needs and preferences.</p>
+        <p>Engaged with customers in a sincere and friendly manner.</p>
+        <p>Responded to customer questions and requests in a prompt and efficient manner.</p>
+      </div>
+      <div class="col-lg-6">
+        <!--Image should be moved to the right, add padding and overlay-->
+        <img src="img/walmart1.png" class="rounded float-end">
+      </div>
+    </div>
+  </div>
   <hr class="my-4">
-</div>
 
-<div class="container-fluid padding">
-<div class="row padding">
-    <div class="col-lg-6">
-      <h2>Wal-Mart <h4>(May 2017 - Sept 2017)</h4></h2>
-      <p>Managed a wide variety of customer service to resolve customer issues quickly and efficiently.</p>
-      <p>Recipient of multiple positive reviews acknowledging dedication to excellent customer service.</p>
-      <p>Recommended merchandise to customers based on their needs and preferences.</p>
-      <p>Engaged with customers in a sincere and friendly manner.</p>
-      <p>Responded to customer questions and requests in a prompt and efficient manner.</p>
+  <!--Fixed image background-->
+  <figure>
+    <div class="fixed-wrap">
+      <div id="fixed">
+      </div>
     </div>
-    <div class="col-lg-6">
-      <!--Image should be moved to the right, add padding and overlay-->
-      <img src="walmart1.png" class="float-right">
-    </div>
-</div>
-</div>
-<hr class="my-4">
+  </figure>
 
-<!--Fixed image background-->
-<figure>
-  <div class="fixed-wrap">
-    <div id="fixed">
-    </div>
+  <!--gray line-->
+  <div>
+    <hr class="my-4">
   </div>
-</figure>
 
-<!--gray line-->
-<div>
-  <hr class="my-4">
-</div>
-
-<!--education block-->
-<div class="container-fluid padding" id="Education">
-  <div class="row padding">
-    <div class="col-12">
-      <h1 class="display-4 text-center">Education</h1>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>School Name:</th>
-        <th>Academic Achievement:</th>
-        <th>Graduation Date:</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>York University</td>
-        <td>Bachelor of Science (Computer Science)</td>
-        <td>April 21,2021</td>
-      </tr>
-      <tr>
-        <td>Maple High School</td>
-        <td>Ontario Secondary School Diploma</td>
-        <td>June 25,2016</td>
-      </tr>
-    </tbody>
-  </table>
-  <p>
-    The high school that I went to was Maple High School. When I graduated from Maple High School,
-    I received Ontario Scholar as well as Grade 12 Law award as my achievements during my time. Currently, I am enrolled in York University computer science program,
-    which is part of the Lassonde School of Engineering. I began my journey at York University on September 7, 2016,
-    as my interest in programming was growing substantially, acknowledging that the field of computer science is expandable. Prior to enrolling into university I had very little knowledge
-    about computer science in a logical an programming stand point. But as the years how gone past I grew more an more confident that my skills were growing beginning to grow a passion about computer
-    programming and the logic that applies in solving problems.
-  </p>
-</div>
-
-<div class="container padding">
-  <h3> A couple skills I have learnt when studying are: </h3>
-  <ul id = "soft_skills">
-  <li><b>Problem Solving e.g. Labs</b></li>
-  <li><b>Team Worker e.g. Lab Projects</b></li>
-  <li><b>Verbal/Written Communication</b></li>
-  <li><b>Adaptability</b></li>
-</ul>
-</div>
-
-<!--gray line-->
-<div>
-  <hr class="my-4">
-</div>
-
-<!--skill block-->
-<div class="container-fluid padding" id="skills">
-  <div class="row padding">
-    <div class="col-12">
-      <h1 class="display-4 text-center">Programming Skills</h1>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid padding">
-  <div class="row text-center padding">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <i class='fab fa-html5' id = "html_logo"></i>
-      <h3>HTML5</h3>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <i class='fab fa-css3' id = "css_logo"></i>
-      <h3>CSS3</h3>
-    </div>
-    <div class="col-xs-12 col-md-4">
-      <i class='fab fa-java' id = "java_logo"></i>
-      <h3>Java</h3>
+  <!--education block-->
+  <div class="container-fluid padding" id="Education">
+    <div class="row padding">
+      <div class="col-12">
+        <h1 class="display-4 text-center">Education</h1>
+      </div>
     </div>
   </div>
 
-    <div class="col-md-12 text-center">
-      <ul class="text-left" id = "programming_skills">
-        <li><b>Java</b></li>
-
-        <li><b>C</b></li>
-        <li><b>SQL</b></li>
-        <li><b>Prolog</b></li>
-        <li><b>RISC-V (basic)</b></li>
-        <li><b>Python</b></li>
-      </ul>
-    </div>
-
-<!--gray line-->
-<div>
-  <hr class="my-4">
-</div>
-
-<h1 class="display-4 text-center" id="Work">Github</h1>
-
-<div class = "border border-0 p-3 mb-4">
-  <div class = "text-center">
-  <a href="https://github.com/Ruchesh1" class="btn btn-info" role="button">Github</a>
-  </div>
-  <div class = "text-center container">
-    <p>Welcome to my github, it consist of projects that I have created, showcasing some of the skills and knowledge that
-      I have been thought or thought myself. It may seem small at the moment but my hope is to grow my repository so I can 
-      contribute my work for the open-source community. My plan is also to help those open-source projects that are unfinished,
-      so that I can have a meaningful impact for the community In a postive way.
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>School Name:</th>
+          <th>Academic Achievement:</th>
+          <th>Graduation Date:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>York University</td>
+          <td>Bachelor of Science (Computer Science)</td>
+          <td>April 21,2021</td>
+        </tr>
+        <tr>
+          <td>Maple High School</td>
+          <td>Ontario Secondary School Diploma</td>
+          <td>June 25,2016</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      The high school that I went to was Maple High School. When I graduated from Maple High School,
+      I received Ontario Scholar as well as Grade 12 Law award as my achievements during my time. Currently, I am
+      enrolled in York University computer science program,
+      which is part of the Lassonde School of Engineering. I began my journey at York University on September 7, 2016,
+      as my interest in programming was growing substantially, acknowledging that the field of computer science is
+      expandable. Prior to enrolling into university I had very little knowledge
+      about computer science in a logical an programming stand point. But as the years how gone past I grew more an
+      more
+      confident that my skills were growing beginning to grow a passion about computer
+      programming and the logic that applies in solving problems.
     </p>
   </div>
-</div>
+
+  <div class="container padding">
+    <h3> A couple skills I have learnt when studying are: </h3>
+    <ul id="soft_skills">
+      <li><b>Problem Solving e.g. Labs</b></li>
+      <li><b>Team Worker e.g. Lab Projects</b></li>
+      <li><b>Verbal/Written Communication</b></li>
+      <li><b>Adaptability</b></li>
+    </ul>
+  </div>
+
+  <!--gray line-->
+  <div>
+    <hr class="my-4">
+  </div>
+
+  <!--skill block-->
+  <div class="container-fluid padding" id="skills">
+    <div class="row padding">
+      <div class="col-12">
+        <h1 class="display-4 text-center">Programming Skills</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class='fab fa-html5' id="html_logo"></i>
+        <h3>HTML5</h3>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class='fab fa-css3' id="css_logo"></i>
+        <h3>CSS3</h3>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <i class='fab fa-java' id="java_logo"></i>
+        <h3>Javascript</h3>
+      </div>
+    </div>
+
+    <!--gray line-->
+    <div>
+      <hr class="my-4">
+    </div>
+
+    <h1 class="display-4 text-center" id="Work">Github</h1>
+
+    <div class="border border-0 p-3 mb-4">
+      <div class="text-center">
+        <a href="https://github.com/Ruchesh1" class="btn btn-info" role="button">Github</a>
+      </div>
+      <div class="text-center container">
+        <p>Welcome to my github, it consist of projects that I have created, showcasing some of the skills and
+          knowledge
+          that
+          I have been thought or thought myself. It may seem small at the moment but my hope is to grow my repository
+          so
+          I can
+          contribute my work for the open-source community. My plan is also to help those open-source projects that
+          are
+          unfinished,
+          so that I can have a meaningful impact for the community In a postive way.
+        </p>
+      </div>
+    </div>
+
+    <!--   Core JS Files   -->
+    <script src="js/bootstrap.js"></script>
+    <script src="animation.js"></script>
+    <script src="switch.js"></script>
 
 </body>
+
+</html>
